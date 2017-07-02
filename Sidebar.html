@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- viewport - user's screen, using device width, initial-scale=1 - don't zoom in or out -->
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>The New Boston Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Sidebar.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#" class="btn btn-success" id="menu-toggle">Toggle Menu</a>
+                        <h1>Sidebar Layouts</h1>
+                        <p>I love pie, I love pie, I love pie, I love pie, I love pie,
+                            I love pie, I love pie, I love pie, I love pie, I love pie,
+                            I love pie, I love pie, I love pie, I love pie, I love pie,
+                            I love pie, I love pie, I love pie, I love pie, I love pie</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("menuDisplayed");
+        });
+    </script>
+</body>
+</html>
